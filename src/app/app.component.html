@@ -1,5 +1,5 @@
 <div class="main">
-  <h1 class="title" [ngClass]="{ fadeIn: isRecording }">
+  <h1 class="title" [ngClass]="{ fadeIn: isRecording, hidden: !isRecording }">
     Say the levitation charm
   </h1>
   <div class="feather-container">
