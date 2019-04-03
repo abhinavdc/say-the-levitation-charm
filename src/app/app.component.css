@@ -14,14 +14,11 @@
   animation: fadeIn 3s forwards;
 }
 
-.fadeOut {
-  animation: fadeOut 3s forwards;
-}
 .feather-container {
   width: 300px;
 }
 
-.feather{
+.feather {
   transform: rotate(-30deg);
 }
 
@@ -29,6 +26,10 @@
   position: relative;
   -webkit-animation: levitate-animation 8s 1; /* Safari 4.0 - 8.0 */
   animation: levitate-animation 8s 1;
+}
+
+.stationary {
+  filter: drop-shadow(-3px 20px 10px rgba(27, 26, 26, 0.15));
 }
 
 .button-group {
@@ -93,12 +94,15 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes levitate-animation {
   0% {
+    filter: drop-shadow(-3px 20px 10px rgba(27, 26, 26, 0.15));
     bottom: 0px;
   }
   80% {
+    filter: drop-shadow(-100px 120px 14px rgba(27, 26, 26, 0.02));
     bottom: 150px;
   }
   100% {
+    filter: drop-shadow(-3px 20px 10px rgba(27, 26, 26, 0.15));
     bottom: 0px;
   }
 }
@@ -106,12 +110,15 @@
 /* Standard syntax */
 @keyframes levitate-animation {
   0% {
+    filter: drop-shadow(-3px 20px 10px rgba(27, 26, 26, 0.15));
     bottom: 0px;
   }
   80% {
+    filter: drop-shadow(-100px 120px 14px rgba(27, 26, 26, 0.02));
     bottom: 150px;
   }
   100% {
+    filter: drop-shadow(-3px 20px 10px rgba(27, 26, 26, 0.15));
     bottom: 0px;
   }
 }
@@ -122,14 +129,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }

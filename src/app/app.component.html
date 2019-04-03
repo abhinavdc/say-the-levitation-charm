@@ -1,12 +1,12 @@
 <div class="main">
-  <h1 class="title" [ngClass]="{ fadeOut: !isRecording, fadeIn: isRecording }">
+  <h1 class="title" [ngClass]="{ fadeIn: isRecording }">
     Say the levitation charm
   </h1>
   <div class="feather-container">
     <img
       class="feather"
       src="../assets/feather.png"
-      [ngClass]="{ levitate: correctSpell }"
+      [ngClass]="{ levitate: correctSpell, stationary: !correctSpell }"
     />
   </div>
   <div class="button-group">
